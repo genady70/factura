@@ -1,4 +1,4 @@
-package invoices;
+package invoices.src;
 import java.util.Objects;
 // контактная информация —
 // используется для представления информации о покупателе

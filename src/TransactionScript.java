@@ -1,6 +1,12 @@
-package invoices;
+package invoices.src;
+import invoices.src.ContactModel;
+import invoices.src.InvoiceLineModel;
+import invoices.src.InvoiceModel;
+import invoices.src.InvoiceProxy;
+
 import java.sql.*;
 import java.sql.Date;
+import java.time.Period;
 import java.util.*;
 // запросы на языке SQL
 public class TransactionScript {
@@ -8,7 +14,7 @@ public class TransactionScript {
  }
  // ищет счета-фактуры за заданный период
  public static List<InvoiceProxy> findInvoices(Period p,
- Connection c) throws SQLException {
+                                               Connection c) throws SQLException {
  List<InvoiceProxy> proxies = new ArrayList<>();
  String sql = "SELECT * FROM invoice"
  + " WHERE idate BETWEEN ? AND ?"
@@ -25,7 +31,7 @@ public class TransactionScript {
  }
  // ищет счет-фактуру по идентификатору
  public static InvoiceModel loadInvoice(InvoiceProxy p,
- Connection c) throws SQLException,
+                                        Connection c) throws SQLException,
  DataException {
  String sql = "SELECT * FROM invoice WHERE id = ?";
  try (PreparedStatement ps = c.prepareStatement(sql)) {

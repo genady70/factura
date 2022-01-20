@@ -1,6 +1,7 @@
-package invoices;
+package invoices.src;
 import java.math.BigDecimal;
 import java.util.*;
+
 import org.jdesktop.observablecollections.*;
 // полная информации о счете-фактуре,
 // используемая в диалоговом окне редактирования

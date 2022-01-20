@@ -1,4 +1,5 @@
-package invoices;
+package invoices.src;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 // строка счета-фактуры

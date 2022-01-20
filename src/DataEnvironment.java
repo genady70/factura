@@ -1,4 +1,5 @@
-package invoices;
+package invoices.src;
+
 import java.awt.event.*;
 import java.sql.*;
 import javax.swing.Timer;

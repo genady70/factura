@@ -1,4 +1,4 @@
-package invoices;
+package invoices.src;
 import java.math.BigDecimal;
 import java.util.Date;
 // сокращенная информации о счете-фактуре,

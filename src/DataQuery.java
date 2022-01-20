@@ -1,4 +1,4 @@
-package invoices;
+package invoices.src;
 import java.sql.*;
 // используется для реализации «инверсии управления»
 // при обращении к БД
